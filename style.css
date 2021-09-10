@@ -7,22 +7,30 @@ body {
 
 /* Styling for the navbar */
 .nav-container{
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
 .nav-title {
     color:#7944e6;
     float: right;
-    margin-left:auto;
+    margin-left: auto;
     
 }
 
-.nav-title a{
+ul {
+    list-style-type: none;
+}
+
+.nav-title li {
     text-decoration: none;
-    float:left ;
+    float: left ;
     text-align: center;
     padding: 20px 16px;
+}
+
+.nav-title a {
+    text-decoration: none;
 }
 
 .nav-title a:hover {
@@ -39,7 +47,7 @@ header{
     width: 350px;
     margin: 20px 50px 20px 50px;
     float: left;
-    clear:left ; 
+    clear: left; 
 }
 
 .about-text {
@@ -90,20 +98,26 @@ header{
 
 .menu-cards p{
     color: #7944e6;
-    position: absolute;
+    position: relative;
     bottom: 0;
     text-align: center;
     margin-left: 8.5%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
     body {
         margin: 2%;
+        flex-direction: row;
     }
+
     .header-image {
         width: 50%;
+    }
+
+    .menu-container {
+        flex-basis: 65%;
     }
 
     .menu-cards img {
